@@ -13,7 +13,7 @@
       <% end %>
       <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
       <div class="prototype__image">
-        <%= image_tag 'logo.png' %>
+        <%= image_tag @prototype.image,class: '@prototype_image' if @prototype.image.attached? %>
       </div>
       <div class="prototype__body">
         <div class="prototype__detail">
